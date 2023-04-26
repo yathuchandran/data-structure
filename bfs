@@ -1,0 +1,398 @@
+
+
+
+// function encryption(str,n){
+//         let newString =""
+//         for (let i=0;i<str.length;i++){
+//             let asciiCode = str.charCodeAt(i)
+//             if(asciiCode >= 65 && asciiCode <=90){
+//                 newString += String.fromCharCode( ( ( asciiCode - 65 + n ) % 26 ) + 65 )
+//             }else if(asciiCode >= 97 && asciiCode <= 122 ){
+//                 newString += String.fromCharCode(((asciiCode - 97 +n )% 26 ) + 97)
+//             }
+//             }
+//             return newString
+//         }
+//     let he = "yatheesh"
+//     let d = encryption(he , 2)
+//     console.log(d)
+
+
+
+// function encryption(str, n) {
+//     let newString = ""
+
+//     for (i = 0; i < str.length; i++) {
+//         let asciiCode = str.charCodeAt(i)
+//         if (asciiCode => 65 && asciiCode <= 90) {
+//             newString += String.fromCharCode(((asciiCode - 65 + n) % 26) + 65)
+//         } else if (asciiCode => 97 && asciiCode <= 122) {
+//             newString += String.fromCharCode(((asciiCode - 97 + n) % 26) + 97)
+//         }
+//     }
+//     return newString
+
+// }
+
+// let he = "yathu"
+// let ff = encryption(he, 2)
+// console.log(ff);
+
+
+
+
+
+
+// function emcryption(str,n) {
+//     let newstr=""
+
+//     for(i=0;i<str.length;i++){
+//         let asciiCode=str.charCodeAt(i)
+//         if (asciiCode=>65 && asciiCode<=90) {
+//             newstr+=String.fromCharCode(((asciiCode-65+n)%26)+65)
+//         }else if(asciiCode=>97 && asciiCode<=122){
+//             newstr+=String.fromCharCode(((asciiCode-97+n)%26)+97)
+//         }
+//     }
+//     return newstr
+// }
+
+// let he="yatheesh"
+// let d=emcryption(he,4)
+// console.log(d);
+
+
+
+
+
+// let a="yatheesh"
+// let c=""
+// let b=c.a.split()
+// console.log(b);
+
+// for(i=0;i<a.length;i++){
+//     if (i%2!==0) {
+//         b[i]="*"
+
+//     }
+// }
+// console.log(b.join(""));
+
+
+
+
+// let a = "yatheesh";
+// //let c = "";
+// let b = a.split("");
+// let as = [];
+
+// for (i = 0; i < a.length; i++) {
+//   if (i % 2 !== 0) {
+//     // as.push("*");
+//     as[i]="*"
+//   } else {
+//     as.push(b[i]);
+//   }
+// }
+
+// console.log(as.join(""));
+
+
+
+// let a = "yatheesh";
+// let b = [];
+
+// for (i = 0; i < a.length; i++) {
+//   if (i % 2 !== 0) {
+//     b += "*";
+//   } else {
+//     b += a[i];
+//   }
+// }
+
+// console.log(b);
+
+
+
+
+
+// let num=1;
+// function show() {
+
+//   if (num<=100) {
+//     console.log("hei",num);
+//     num++
+//     show();
+//   }
+ 
+// }
+// show()
+
+
+
+// let a=[4,7,2,5,1,9]
+
+// function show() {
+//   if (a.length>0) {
+//     console.log(a.shift())
+//     show(a)
+    
+//   }
+  
+// }
+// show(a)
+
+// function show(n) {
+//   if(n<=0){
+//     return 0;
+//   }else{
+//     return n+show(n-1)
+//   }
+// }
+// console.log(show(20));
+
+
+
+
+
+// function fact(n) {
+//   if (n==0) {
+//     return 1;
+//   }else{
+//     return n*fact(n-1)
+//   }
+// }
+
+// let n=3
+
+// console.log(fact(n));
+
+
+
+// class linkedlist{
+//   constructor(data){
+//     this.head={
+//       value:data,
+//       next:null
+//     }
+//     this.tail=this.head
+//     this.length=1;
+//   }
+//   append(data){
+//     const newNode={
+//       value:data,
+//       next:null
+//     }
+//     this.tail.next=newNode
+//     this.tail=newNode
+//     this.length++
+//   }
+// }
+// const mylist=new linkedlist(10)
+// mylist.append(18)
+// console.log(mylist);
+
+
+
+
+
+
+// class linkedlist{
+//   constructor(data){
+//    this.head={
+//     value:data,
+//     next:null
+//    }
+//    this.tail=this.head
+//    this.length=1;
+//   }
+//   append(data){
+//     let newNode={
+//       value:data,
+//       next:null
+//     }
+//     this.tail.next=newNode
+//     this.tail
+//   }
+// }
+
+
+
+
+// class linkedlist{
+//   constructor(data){
+//     this.head={
+//       value:data,
+//       next:null
+//     }
+//     this.tail=this.head
+//     this.length=1;
+//   }
+//   append(data){
+//     let newNode={
+//       value:data,
+//       next:null
+//     }
+//     this.tail.next=newNode
+//     this.tail=newNode
+//     this.length++
+//   }
+//   prepend(data){
+//    const  newNode={
+//     value:data,
+//     next:null
+//     }
+//     newNode.next=this.head
+//     this.head=newNode
+//   }
+// }
+
+// const mylist=new linkedlist(10)
+// mylist.append(17)
+// mylist.prepend(20)
+
+// console.log(mylist);
+
+
+
+
+
+// class linkedlist{
+//   constructor(data){
+//     this.head={
+//       value:data,
+//       next:null
+//     }
+//     this.tail=this.head
+//     this.length=1;
+//   }
+//   append(data){
+//     const newNode={
+//       value:data,
+//       next:null
+//     }
+//     this.tail.next=newNode
+//     this.tail=newNode
+//     this.length++
+//   }
+//   prepend(data){
+//     const newNode={
+//       value:data,
+//       next:null
+//     }
+//     newNode.next=this.head
+//     this.head=newNode
+//   }
+//  treversing(req){
+//     let counter:0,
+//     let currentNode:this.head
+
+//     while(counter !=req){
+//         counter++
+//         let leaderNode=currentNode.next
+//     }
+//  }
+
+// }
+
+// const mylist=new linkedlist(10)
+ 
+
+
+
+
+
+
+
+
+
+
+  //  // hash function using division method
+  //   hash(key) {
+  //    let total=0
+  //    for(let i=0;i<key.length;i++){
+  //       total+=key.charCodeAt(i)
+  //    }
+  //    return total % this.size
+  //   }
+  
+  //   // set a key-value pair into the hash table
+  //   set(key, value) {
+  //     const index = this.hash(key);
+  //     const bucket=this.table[index]
+  //     if (!bucket) {
+  //       this.table[index]=[[key,value]]
+  //     }else{
+  //       const sameKeyItem=bucket.find(item=>item[0]===key)
+  //       if (sameKeyItem) {
+  //           sameKeyItem[1]=value
+  //       } else {
+  //           bucket.push([key,value])
+            
+  //       }
+  //     }
+  //   }
+  
+
+
+
+
+
+
+
+
+ // quadratic probing in hashtable
+
+class hashtable{
+  constructor(){
+    this.table=new Array(126)
+    this.size=0
+  }
+  _hash(key){
+    var hash=0
+    for(var i=0;i<key.length;i++){
+      hash+=key.charCodeAt(i)
+    }
+    return hash%this.table.length
+  }
+  set(key,value){
+    const index=this._hash(key)
+    if(this.table[index]){
+     let i=1
+      while(this.table[(index+i*i)%this.table.length]){
+        i++
+      }
+      this.table[(index+i*i)%this.table.length]=[key,value]
+    }
+    else{
+      this.table[index]=[key,value]
+    }
+    this.size++
+  }
+  get(key){
+    const index=this._hash(key)
+    if(this.table[index]){
+     let i=1
+      while(this.table[(index+i*i)%this.table.length]){
+        if(this.table[(index+i*i)%this.table.length][0]===key){
+          return this.table[(index+i*i)%this.table.length][1]
+        }
+        i++
+      }
+    }
+    else{
+      return undefined
+    }
+  }
+  display(){
+    this.table.forEach(element=>{
+      console.log(element)
+    })
+  }
+}
+const hh=new hashtable()
+hh.set("name","sreerag")
+hh.set("name","toure")
+// hh.get("leo")
+hh.display()
+console.log(hh.table)
